@@ -1,2 +1,10 @@
 <p>comp-one works!</p>
 <button (click)="buttonClicked()">click</button>
+
+<div *ngFor="let post of posts">
+    <tr>
+    <p>{{post.body}}</p></tr>
+    <p>{{post.id}}</p>
+    <p>{{post.title}}</p>
+    <p>{{post.userId}}</p>
+</div>
